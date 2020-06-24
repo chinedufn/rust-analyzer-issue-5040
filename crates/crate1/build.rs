@@ -5,5 +5,5 @@ fn main() {
 
     let out = PathBuf::from(std::env::var("OUT_DIR").unwrap());
 
-    std::fs::write(out.join("generated"), generated).unwrap();
+    std::fs::write(out.join("generated.rs"), generated).unwrap();
 }
